@@ -1,16 +1,19 @@
 <header>
-  <div class="navbar navbar-dark bg-secondary shadow-sm">
-    <div class="navbar-brand align-item-center d-flex">
-      <i style='font-size: 30px; margin-left: 10px;' class="fas fa-shipping-fast"></i>
-      <strong style='margin-left: 10px;'>Shopping Cart</strong>
-      <div class="form-group">
-        <input type="text" class='form-control' placeholder='Search a product'>
+  <div class="navbar navbar-dark bg-warning shadow-sm">
+      <div class="navbar-brand align-item-center d-flex">
+          <i style="font-size: 40px;margin-left:20px; color:black;" class="fab fa-shopify">&nbsp;    
+          </i>
+          <strong style="font-size: 25px; color:black;">Shopping Cart</strong>
       </div>
-      <span class='fas fa-search search-icon'></span>
+    <div class='d-flex align-item-center'>
+      <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
+        <span class="fas fa-search search-icon"></span>
+      </div>
+      <button routerLink="cart" class="btn btn-warning" style='margin-right:20px;'>
+          <i style="font-size:30px;" class="fas fa-cart-plus"></i>
+          <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+      </button>
     </div>
-    <button style='margin-right: 20px;' class="btn btn-primary">
-      <i style='font-size:20px;' class="fas fa-cart-plus"></i>
-      <div style='font-size: 10px;' class="badge bg-danger">3</div>
-    </button>
   </div>
 </header>
