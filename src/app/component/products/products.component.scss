@@ -1,9 +1,9 @@
 .card-top {
   position: relative;
   display: flex;
+  flex-direction: row-reverse;
   flex-direction: column;
   min-width: 0;
-  word-wrap: break-word;
   background: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
