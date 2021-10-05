@@ -1,18 +1,14 @@
 .card-top {
-  position: relative;
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
   flex-direction: column;
   min-width: 0;
   background: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 3px solid rgba(0, 0, 0, 0.2);
   border-radius: .25rem;
 }
 
-.item img {
-  width: 64px;
-}
 
 .item {
   margin: 0px 15px;
@@ -26,12 +22,14 @@
 .card {
   padding: 20px;
   margin: 50px;
+  
 }
 
 .card img {
   width: 200px;
   height: 200px;
   margin-bottom: 15px;
+  margin-left: 65px;
   transition: 0.3s ease-in-out;
 }
 
